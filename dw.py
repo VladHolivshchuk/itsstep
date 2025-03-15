@@ -1,14 +1,18 @@
-print("Яка там в тебе оцінка?")
-otsenka = int(input())
+class Car:
+ speed = 160
+ def __init__(self,speed):
+    self.speed=speed
+ def info(self):
+     print("Швидкість:", self.speed)
 
-if 1 <= otsenka < 6:
-    print("Нє ну ти канєшна капееець")
+sp=int(input("Максимальна швидкість:"))
+auto = Car(sp)
+#print("Швидкість:", auto.speed)
+auto.info()
+auto2=Car(180)
+auto2.info()
 
-elif 6 <= otsenka < 9:
-    print("Нє ну норм")
 
-elif 9 <= otsenka <= 12:
-    print("Оце вже нічо сє")
 
 
 
